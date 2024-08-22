@@ -1,0 +1,10 @@
+# Check if status checks errors.
+I setup1.inc
+I status-test.inc
+> rm g.txt
+<<<
+> rm f.txt
+<<<
+> commit "Removed f and g"
+No changes added to the commit.
+<<<

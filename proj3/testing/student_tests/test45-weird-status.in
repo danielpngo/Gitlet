@@ -1,0 +1,12 @@
+# Check if commiting and status work.
+I setup1.inc
+I status-test.inc
+> commit "Added f and g"
+<<<
+> rm g.txt
+<<<
+> rm f.txt
+<<<
+> commit "Removed f and g"
+<<<
+I blank-status.inc

@@ -1,0 +1,19 @@
+# Check if commiting, adding, removing, and status work.
+I setup1.inc
+I status-test.inc
+> commit "Added f and g"
+<<<
+> rm g.txt
+<<<
+> rm f.txt
+<<<
+> commit "Removed f and g"
+<<<
+I blank-status.inc
+> add f.txt
+File does not exist.
+<<<
+> rm g.txt
+No reason to remove the file.
+<<<
+I blank-status.inc
